@@ -1,4 +1,3 @@
-
 export interface Friend {
     name: string;
     phone: string;
@@ -11,7 +10,7 @@ export interface Colleague {
     contact: {
       email: string;
       extension: number
-    } 
+    }
   }
 
 export interface ColleagueHistory {
