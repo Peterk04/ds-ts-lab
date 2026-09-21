@@ -53,10 +53,11 @@ function sortColleagues(
   const fullResult =  sorted.map((ce) => ({ name: ce.name, email: ce.contact.email }));
   return fullResult.slice(0,end)
 }
-
+// Test invocations
 console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
 console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
 console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length))); // NEW
+
 
 function findFriends(fs: Friend[], criterion: (friend: Friend) => boolean) {
   return fs.filter(criterion).map((f) => f.name);
